@@ -1,10 +1,20 @@
 import React from 'react'
+import HousesModal from '/src/components/housesModal'
 
 function House0002() {
+    const imagesHouse002 = [
+        '../img/house2/01JCNDTHK0032T59GDK8F3E2VR.webp',
+        'img/house2/01JCNDV0JK12MJMRKB9S8JJNN2.webp',
+        'img/house2/01JCNDVE934YGE3EX4E9WFR7B4.webp',
+        'img/house2/01JCNDWD7PQRN6TC0DZC9R7HCZ.webp',
+        'img/house2/01JCNDWPZR8Y5Q98MTTYNC09JF.webp',
+        'img/house2/01JCNDX1N8PD699TY6QVAC915Q.webp',
+        'img/house2/01JCNDXCD6JDJ166D237DVSB8D.webp'
+    ];
     return (
-        <div>
-            <div class="bg-[url('../img/house2/01JCNDRN5AEFXHSC63P8FXZYK8.webp')] h-96 w-96 bg-contain bg-no-repeat hover:scale-110 delay-100 duration-300"></div>
-        </div>
+        <>
+            <HousesModal Imagetitle='../img/house2/01JCNDRN5AEFXHSC63P8FXZYK8.webp' images={imagesHouse002} description="House Detail" />
+        </>
 
     )
 }
